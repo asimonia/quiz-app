@@ -27,6 +27,7 @@ body {
     margin: 40px 0px 20px 0px;
 }
 
+/* pictures for the question */
 .entry {
     width: 320px;
     float: left;
@@ -52,14 +53,39 @@ figure img {
     border: 1px solid #d6d6d6;
 }
 
-
+/* Get input from the user */
 .input {
-    border:1px solid #000;
-    display:inline-block;
+    border: 1px solid #000;
+    display: inline-block;
 }
 
 input,
 button {
-    background-color:transparent;
-    border:0;
+    background-color: transparent;
+    border: 0;
+}
+
+/* Content for lettering */
+ul.guessBox {
+    height: 80px;
+    margin: 10px auto 0;
+    padding: 0.5em;
+    display: block;
+    line-height: 2em;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    overflow: auto;
+}
+
+ul.guessBox li {
+    display: inline;
+    background-color: #1a4e95;
+    padding: 0.3em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 95%;
+    margin: 0.2em;
+    color: #fff;
 }
