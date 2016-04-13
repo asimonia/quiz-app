@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<title>Pick Four Quiz</title>
@@ -13,21 +12,13 @@
 			<!--header for the page goes here-->
 			<div class="header">
 				<img src="images/logo.jpg" alt="Logo" width="456" height="122">
-				<p>Question # <span id="count">1</span> of 5</p>
+				<p>Question # <span id="cur_quest_num">1</span> of <span id="total_quest_count">5</span></p>
+				<hr/>
 			</div>
 
 			<!--pictures go here-->
-			<div class="entry">
-				<figure><img src="images/q1a.jpg" alt="Fig A"></figure>
-			</div>
-			<div class="entry">
-				<figure><img src="images/q1b.jpg" alt="Fig B"></figure>
-			</div>
-			<div class="entry">
-				<figure><img src="images/q1c.jpg" alt="Fig C"></figure>
-			</div>
-			<div class="entry">
-				<figure><img src="images/q1d.jpg" alt="Fig D"></figure>
+			<div class="pictures">
+
 			</div>
 			
 			<!--user input goes here-->
@@ -40,20 +31,8 @@
 			
 			<!--letters available-->
 			<div id="letters">
-				<ul id "guessList" class="guessBox clearfix">
-					<li>S</li>
-					<li>I</li>
-					<li>G</li>
-					<li>N</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
-					<li>A</li>
+				<ul id "guessList" class="guessBox">
+
 				</ul>
 			</div>
 		</section>
@@ -61,5 +40,8 @@
 		<section id="ending">
 		</section>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/questions.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
