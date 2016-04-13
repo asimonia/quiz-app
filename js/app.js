@@ -29,7 +29,7 @@ qManager = {
 		var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		var questionAnswerLen = questionAnswer.length;
 		
-		// Append random letters to the answer to create a 12 letter string
+		// Append random letters to the answer to create a 10 letter string
 		for (var i = 0; i < 10 - questionAnswerLen; i++) {
 			questionAnswer += letters[Math.floor((Math.random() * 26))];
 		};
@@ -49,7 +49,7 @@ qManager = {
     		return a.join("");
 		};	
 
-		// Shuffle the 12 letter string to create a randomize pool of letters
+		// Shuffle the 10 letter string to create a randomize pool of letters
 		questionAnswer = questionAnswer.shuffle();
 
 		// Create the pool of letter choices
